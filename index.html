@@ -4,26 +4,37 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Structboost - 1º projeto do Codeboost</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/typograph.css">
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/reset.css"> <!-- o css chamado por ultimo é o que vai ter + importancia -->
 </head>
 
 <body>
-    <div class="container">
-        <h1>Título 01</h1>
-        <h2>Título 01</h2>
-        <h3>Título 01</h3>
-        <h4>Título 01</h4>
-        <h5>Título 01</h5>
-        <h6>Título 01</h6>
+    <header>
+        <div class="container">
+            <a href="#">
+                <img src="./imgs/logo.svg" alt="Logo Structboost" title="Logo Structboost">
+            </a>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ea quos amet 
-            ipsam iste facilis nihil autem asperiores excepturi nam tenetur atque 
-            corrupti tempore iure, in maxime optio ut quibusdam!</p>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Diferenciais</a></li>
+                    <li><a href="#">Galeria</a></li>
+                </ul>
+
+                <button class="btn-primary">Entrar em contato</button>
+            </nav>
         </div>
+    </header>
 </body>
 
 </html>

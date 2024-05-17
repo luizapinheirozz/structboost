@@ -1,90 +1,29 @@
-/* Reset e configuração padrão */
-:root {
-    --pink-10: #F67ACB;
-    --pink-20: #CF62A9;
-    --pink-30: #9D457F;
-
-    --gray-900: #0A0B0D;
-    --gray-800: #393B42;
-    --gray-700: #5C5F69;
-    --gray-600: #787C87;
-    --gray-500: #979BA6
-    --gray-400: #ABAFBA;
-    --gray-300: #C0C3CC;
-    --gray-200: #DFE1E8;
-    --gray-100: #F5F6FA;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif; /* Texto corrido */
-}
-
-img {
-    max-width: 100%;
-    display: block;
-}
-
-a {
-    display: inline-block;
-    text-decoration: none;
-}
-
-ul {
-    list-style: none;
-}
-
-html {
-    font-size: 62.5%; /* 10px */
-    background-color: var(--gray-900);
-    color: var(--gray-100);
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Sora', sans-serif;
-    line-height: 120%;  
-    font-weight: 700;
-}
-
-h1 {
-    font-size: 5.6rem;
-}
-
-h2 {
-    font-size: 4.8rem;
-}
-
-h3 {
-    font-size: 4.0rem;
-}
-
-h4 {
-    font-size: 2.8rem;
-}
-
-h5 {
-    font-size: 2.4rem;
-    font-weight: 600;
-}
-
-h6 {
-    font-size: 2.2rem;
-}
-
-p {
-    font-size: 1.8rem;
-    line-height: 150%;
-    /* font-weight: 400; // default em texto corrido */
-}
-
-/* Criação da grid */
-.container {
+header {
     width: 100%;
-    max-width: 124.6rem; 
-    margin: 0 auto;
-    padding: 0 1.5rem; /* Para dar um respiro dos lados quando a tela for menor. 
-    Só que o padding diminui o width do container, então preciso adicionar 30px ao 
-    max-width (15px de cada lado). De 121.6 rem vai pra 124.6 rem*/
+    height: 8.8rem;
+    display: flex;
+    align-items: center;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+header nav ul {
+    display: flex;
+    gap: 4rem;
+}
+
+header nav ul li a {
+    color: var(--gray-100);
+    font-size: 1.6rem;
+    letter-spacing: -0.48px;
 }

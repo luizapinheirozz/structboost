@@ -1,0 +1,9 @@
+/* Criação da grid */
+.container {
+    width: 100%;
+    max-width: 124.6rem; 
+    margin: 0 auto;
+    padding: 0 1.5rem; /* Para dar um respiro dos lados quando a tela for menor. 
+    Só que o padding diminui o width do container, então preciso adicionar 30px ao 
+    max-width (15px de cada lado). De 121.6 rem vai pra 124.6 rem*/
+}

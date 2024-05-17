@@ -1,0 +1,97 @@
+/* Estilização btn */
+.btn-primary {
+    padding: 1.6rem 2.3rem;
+    background-color: var(--pink-10);
+    color: var(--gray-900);
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: -0.48px;
+    transition: background-color .3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--pink-20);
+}
+
+.btn-primary.lg {
+    font-size: 1.8rem;
+    padding: 2.3rem 2.4rem;
+}
+
+.btn-primary.white {
+    background-color: #FFFFFF;
+}
+
+.btn-primary.white:hover {
+    background-color: var(--gray-900);
+    color: #FFFFFF;
+}
+
+/* Estilizção item-digital */
+
+.item-digital {
+    flex-grow: 1;
+    /*  se um item tem flex-grow: 2 e outro tem flex-grow: 1, o primeiro item crescerá duas vezes mais que o segundo item para ocupar o espaço disponível. */
+    max-width: 38.4rem;
+}
+
+.item-digital .icon {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.6rem;
+}
+
+.item-digital .info h6 {
+    margin-bottom: 0.8rem;
+}
+
+.item-digital .info p {
+    color: var(--gray-600);
+}
+
+/* Estilização card-post */
+.card-post {
+    border: 2px solid rgba(255, 255, 255, 0.08);
+    background-color: rgba(255, 255, 255, 0.02);
+    padding: 2.4rem;
+}
+
+.card-post .tag {
+    display: inline-block;
+    border-radius: 100px;
+    background-color: rgba(255, 255, 255, 0.10);
+    padding: 0.8rem 2.2rem;
+    font-family: 'Sora', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 1.26px;
+    text-transform: uppercase;
+    margin-bottom: 4.5rem;
+}
+
+.card-post .image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6.4rem;
+}
+
+.card-post .text {
+    width: 100%;
+    max-width: 50.8rem;
+}
+
+.card-post .text h6 {
+    margin-bottom: 0.8rem;
+}
+
+.card-post .text p {
+    font-size: 1.6rem;
+    color: var(--gray-600);
+}
