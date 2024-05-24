@@ -31,8 +31,7 @@
 /* Estilizção item-digital */
 
 .item-digital {
-    flex-grow: 1;
-    /*  se um item tem flex-grow: 2 e outro tem flex-grow: 1, o primeiro item crescerá duas vezes mais que o segundo item para ocupar o espaço disponível. */
+    width: 100%;
     max-width: 38.4rem;
 }
 
@@ -94,4 +93,27 @@
 .card-post .text p {
     font-size: 1.6rem;
     color: var(--gray-600);
+}
+
+@media(max-width: 991px) {
+    .item-digital {
+        text-align: center;
+    }
+
+    .item-digital .icon {
+        margin: 1.6rem auto;
+    }
+
+    .item-digital .info p br {
+        display: none;
+    }
+}
+
+@media(max-width: 560px) {
+    .item-digital .info p {
+        line-height: 150%;
+        letter-spacing: -0.54px;
+        font-size: 1.8rem;
+        max-width: 31.9rem;
+    }
 }
