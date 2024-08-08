@@ -76,14 +76,25 @@ header nav ul li a:hover {
 
 .s-hero .text h1::after {
     content: '';
-    width: 100%;
     max-width: 59.9rem;
     height: 2.2rem;
-    background: url(../imgs/line-title.svg) no-repeat center center;
+    background: url(../imgs/line-title.svg) no-repeat left center;
     position: absolute;
     bottom: -5px;
     left: 39px;
     z-index: -1;
+    animation: drawLine 1s ease-in forwards;
+    /* Nome da animação - Duração - Começa devagar e termina rápido - Executa só 1 vez */
+}
+
+@keyframes drawLine {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
 }
 
 .s-hero .text p {
@@ -97,6 +108,21 @@ header nav ul li a:hover {
     position: absolute;
     bottom: 1.7rem;
     left: 5.5rem;
+    animation: floating 3s ease-in-out infinite; /* Começa devagar, acelera no meio e depois desacelera - Infinito */
+}
+
+@keyframes floating {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(15px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
 }
 
 .s-hero .ilustra {
