@@ -1,26 +1,25 @@
-/* Estilização btn */
 .btn-primary {
-    padding: 1.6rem 2.3rem;
     background-color: var(--pink-10);
     color: var(--gray-900);
+    padding: 1.6rem 2.2rem;
     font-size: 1.6rem;
     font-weight: 600;
-    line-height: 100%;
     letter-spacing: -0.48px;
     transition: background-color .3s ease;
 }
 
-.btn-primary:hover {
-    background-color: var(--pink-20);
-}
-
 .btn-primary.lg {
-    font-size: 1.8rem;
     padding: 2.3rem 2.4rem;
+    font-size: 1.8rem;
+    letter-spacing: -0.54px;
 }
 
 .btn-primary.white {
     background-color: #FFFFFF;
+}
+
+.btn-primary:hover {
+    background-color: var(--pink-20);
 }
 
 .btn-primary.white:hover {
@@ -28,16 +27,14 @@
     color: #FFFFFF;
 }
 
-/* Estilizção item-digital */
-
 .item-digital {
     width: 100%;
     max-width: 38.4rem;
 }
 
 .item-digital .icon {
-    width: 4rem;
-    height: 4rem;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,13 +47,13 @@
 
 .item-digital .info p {
     color: var(--gray-600);
+
 }
 
-/* Estilização card-post */
 .card-post {
     border: 2px solid rgba(255, 255, 255, 0.08);
     background-color: rgba(255, 255, 255, 0.02);
-    padding: 2.4rem;
+    padding: 2.4rem 2.2rem;
 }
 
 .card-post .tag {
@@ -67,7 +64,6 @@
     font-family: 'Sora', sans-serif;
     font-size: 1.4rem;
     font-weight: 600;
-    line-height: 100%;
     letter-spacing: 1.26px;
     text-transform: uppercase;
     margin-bottom: 4.5rem;
@@ -83,7 +79,7 @@
 
 .card-post .text {
     width: 100%;
-    max-width: 50.8rem;
+    max-width: 48.2rem;
 }
 
 .card-post .text h6 {
@@ -91,29 +87,52 @@
 }
 
 .card-post .text p {
-    font-size: 1.6rem;
     color: var(--gray-600);
+    font-size: 1.6rem;
+    letter-spacing: -0.48px;
+    line-height: 150%;
 }
 
-@media(max-width: 991px) {
+@media (max-width: 991px) {
     .item-digital {
         text-align: center;
     }
 
     .item-digital .icon {
-        margin: 1.6rem auto;
-    }
-
-    .item-digital .info p br {
-        display: none;
+        margin: 0 auto 1.6rem;
     }
 }
 
-@media(max-width: 560px) {
-    .item-digital .info p {
+@media (max-width: 560px) {
+    .s-digital .info p {
+        font-size: 1.8rem;
         line-height: 150%;
         letter-spacing: -0.54px;
-        font-size: 1.8rem;
         max-width: 31.9rem;
+    }
+
+    .card-post {
+        padding: 1.6rem 3rem 1.6rem 1.6rem;
+    }
+
+    .card-post .image {
+        max-width: 11.6rem;
+        margin: 5rem auto;
+    }
+
+    .card-post .tag {
+        margin: 0;
+    }
+
+    .card-post .text h6 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        letter-spacing: -0.54px;
+    }
+
+    .card-post .text p {
+        font-size: 1.4rem;
+        line-height: 150%;
+        letter-spacing: -0.42px;
     }
 }

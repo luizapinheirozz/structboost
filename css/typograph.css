@@ -1,8 +1,7 @@
-
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Sora', sans-serif;
-    line-height: 120%;  
     font-weight: 700;
+    line-height: 120%;
 }
 
 h1 {
@@ -34,5 +33,4 @@ h6 {
 p {
     font-size: 1.8rem;
     line-height: 150%;
-    /* font-weight: 400; // default em texto corrido */
 }
