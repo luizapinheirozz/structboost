@@ -83,8 +83,8 @@ header nav ul li a:hover {
     bottom: -5px;
     left: 39px;
     z-index: -1;
-    animation: drawLine 1s ease-in forwards;
-    /* Nome da animação - Duração - Começa devagar e termina rápido - Executa só 1 vez */
+    animation: drawLine 1s .3s ease-in forwards;
+    /* Nome da animação - Duração - Delay - Começa devagar e termina rápido - Executa só 1 vez */
 }
 
 @keyframes drawLine {
